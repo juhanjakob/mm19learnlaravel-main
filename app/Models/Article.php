@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 
-class Article extends Model
+class     Article extends Model
 {
     use HasFactory;
 
