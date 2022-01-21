@@ -3,8 +3,10 @@
 @section('content')
     <h1>{{$author->name}}</h1>
     <h2>Articles: {{$author->articles()->count()}}</h2>
+    <h2>Comments made: {{$author->comments()->count()}}</h2>
+    <h2>Comments on posts: {{$author->comments}}</h2>
 
-
+    
     <div class="row row-cols-4 mt-3" >
         @foreach($author->articles as $article)
             <div class="col mb-3">
